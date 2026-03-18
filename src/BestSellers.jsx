@@ -52,7 +52,7 @@ function BestSellers() {
       <h2 className="text-2xl tracking-[4px] mb-12">
         BEST SELLERS
       </h2>
-
+  
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
 
         {products.map((item) => (
@@ -60,11 +60,7 @@ function BestSellers() {
 
             <div className="relative overflow-hidden group">
 
-              <img
-                src={item.image}
-                alt={item.name}
-                className="w-full h-[250px] object-contain transition duration-500 group-hover:scale-105"
-              />
+              <img src={item.image} alt={item.name} className="w-full h-[250px] object-contain transition duration-500 group-hover:scale-105"/>
 
               <div className="absolute left-0 w-full bg-black text-white py-2 text-[12px] tracking-[2px] cursor-pointer bottom-[-50px] transition-all duration-500 group-hover:bottom-0">
                 QUICK VIEW

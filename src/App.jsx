@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import MainLayout from "./Layout/MainLayout";
 import AuthLayout from "./Layout/AuthLayout";
 import Login from "./Components/Login";
+import  Search  from './Components/Search';
 import BestSellers from './BestSellers'
 import Exclusive from './Exclusive'
 import PerfectBalance from './PerfectBalance'
@@ -16,6 +17,7 @@ function App() {
     <Routes>
       <Route element={<AuthLayout />}>
         <Route path="/login" element={<Login />} />
+        <Route path='/Search' element={<Search />} />
       </Route>
       
       <Route element={<MainLayout />}>
