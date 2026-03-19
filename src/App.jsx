@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import MainLayout from "./Layout/MainLayout";
 import AuthLayout from "./Layout/AuthLayout";
 import Login from "./Components/Login";
-import  Search  from './Components/Search';
 import BestSellers from './BestSellers'
 import Exclusive from './Exclusive'
 import PerfectBalance from './PerfectBalance'
@@ -11,13 +10,13 @@ import ScentJourney from './ScentJourney'
 import Summer from './Summer'
 import Discover from './Discover'
 import Testimonials from './Testimonials'
+import Bottemslider from './Bottemslider'
 
 function App() {
   return (
     <Routes>
       <Route element={<AuthLayout />}>
         <Route path="/login" element={<Login />} />
-        <Route path='/Search' element={<Search />} />
       </Route>
       
       <Route element={<MainLayout />}>
@@ -30,6 +29,7 @@ function App() {
             <Summer/>  
             <Discover/>
             <Testimonials/>
+            <Bottemslider/>
           </>
         } />
       </Route>

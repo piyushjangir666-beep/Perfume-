@@ -62,7 +62,7 @@ function BestSellers() {
 
               <img src={item.image} alt={item.name} className="w-full h-[250px] object-contain transition duration-500 group-hover:scale-105"/>
 
-              <div className="absolute left-0 w-full bg-black text-white py-2 text-[12px] tracking-[2px] cursor-pointer bottom-[-50px] transition-all duration-500 group-hover:bottom-0">
+              <div className="absolute left-0 w-full bg-black text-white py-2 text-[12px] tracking-[2px] cursor-pointer bottom-[-50px] ">
                 QUICK VIEW
               </div>
 
