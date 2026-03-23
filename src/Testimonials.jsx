@@ -113,8 +113,8 @@ const Testimonials = () => {
               </h4>
             </div>
           ))}
-        </div>
-
+        </div> 
+        
         <button
           type="button"
           onClick={handleNext}
@@ -127,5 +127,5 @@ const Testimonials = () => {
     </section>
   ) 
 } 
-
-export default Testimonials    
+   
+export default Testimonials   

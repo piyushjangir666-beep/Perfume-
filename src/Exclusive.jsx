@@ -20,7 +20,7 @@ function  Exclusive() {
             Add a Special Touch with Gift Wrapping
           </p>
         </div>
-
+    
         <div className="flex flex-col items-center">
           <div className="bg-gray-300 w-24 h-24 rounded-full flex items-center justify-center mb-6">
             <Truck size={40} className="text-gray-600" />

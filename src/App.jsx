@@ -11,6 +11,8 @@ import Summer from './Summer'
 import Discover from './Discover'
 import Testimonials from './Testimonials'
 import Bottemslider from './Bottemslider'
+import Video from './Video'
+import InFocus from './InFocus' 
 
 function App() {
   return (
@@ -28,14 +30,16 @@ function App() {
             <ScentJourney/>
             <Summer/>  
             <Discover/>
+            <InFocus/>
+            <Video/>
             <Testimonials/>
             <Bottemslider/>
           </>
         } />
       </Route>
-    </Routes>        
+    </Routes>         
   )      
-}  
+}    
 
 export default App
 

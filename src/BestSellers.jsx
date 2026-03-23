@@ -12,7 +12,6 @@ const products = [
     image: p1,
     name: "WHITE AMBER",
     brand: "CREED",
-    tag: "New",
     price: "₹ 52,400.00",
   },
   {
