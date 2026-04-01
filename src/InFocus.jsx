@@ -11,7 +11,7 @@ const InFocus = () => {
           </h2>
    
           <p className="text-gray-600 leading-7 text-sm md:text-base mb-6">
-            Influenced by traditional perfume rituals as the founder’s travel
+            Influenced by traditional perfume rituals as the founder’s travel   
             inspirations, OJAR is a fusion of fragrances from East and West.
             A balance between heritage and modernity combining the finest
             ingredients to master the craft of best body perfume making.
@@ -24,13 +24,13 @@ const InFocus = () => {
             SHOP NOW
           </button> 
         </div>
-        
+            
         <div className="flex justify-center">
           <img src={perfume} alt="Perfume Collection"className="w-full max-w-md md:max-w-full object-contain"/>
-        </div>  
+        </div>   
       </div>
     </section>
   ) 
 } 
 
-export default InFocus   
+export default InFocus         

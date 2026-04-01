@@ -3,6 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import MainLayout from "./Layout/MainLayout";
 import AuthLayout from "./Layout/AuthLayout";
 import Login from "./Components/Login";
+import Perfume from "./Components/Perfume"; 
+import Candles from './Components/Candles';
 import BestSellers from './BestSellers'
 import Exclusive from './Exclusive'
 import PerfectBalance from './PerfectBalance'
@@ -13,7 +15,7 @@ import Testimonials from './Testimonials'
 import Bottemslider from './Bottemslider'
 import Video from './Video'
 import InFocus from './InFocus' 
-
+import Slider from './Slider';
 function App() {
   return (
     <Routes>
@@ -24,6 +26,7 @@ function App() {
       <Route element={<MainLayout />}>
         <Route path="/" element={
           <>
+            <Slider/>
             <BestSellers/> 
             <Exclusive/>
             <PerfectBalance/>
@@ -36,11 +39,24 @@ function App() {
             <Bottemslider/>
           </>
         } />
-      </Route>
+
+          <Route path="/perfume" element={
+          <>
+         
+           <Perfume/>
+          </>
+        } />
+          <Route path="/Candles" element={
+          <>
+         
+           <Candles/>
+          </>
+        } />
+      </Route> 
+
     </Routes>         
   )      
 }    
 
 export default App
-
 

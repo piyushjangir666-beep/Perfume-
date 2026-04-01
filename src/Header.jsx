@@ -1,30 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaSearch, FaUser, FaShoppingBag, FaHeart, FaTimes } from "react-icons/fa";
-import slider1 from "./images/slider2.png"
-import slider2 from "./images/slider3.png"
-import slider3 from "./images/slider.png"
-import slider4 from "./images/slider4.png"
 
 function Header() {
-  const [currentSlide, setCurrentSlide] = useState(0)
+  
   const [showSearch, setShowSearch] = useState(false)
   const [searchQuery, setSearchQuery] = useState("")
   
-  const slides = [slider1, slider2, slider3, slider4] 
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length) 
-    }, 3000)   
-    
-    return () => clearInterval(interval) 
-  }, [slides.length]) 
-
   const showCart = () => {  
     alert("Cart is empty!")
   }
-
+console.log(useEffect)
   const handleSearchClose = () => {
     setShowSearch(false)
     setSearchQuery("")
@@ -60,17 +46,16 @@ function Header() {
         </div>   
         
         <nav className="flex justify-center gap-6 md:gap-10 mt-6 text-xs md:text-sm tracking-[2px] flex-wrap">
-          <a href="#" className="hover:text-[#b79b73]">PERFUMES</a>
-          <a href="#" className="hover:text-[#b79b73]">CANDLES</a> 
+           <Link to="/perfume" className="hover:text-[#b79b73]">PERFUME</Link>    
+            <Link to="/candles" className="hover:text-[#b79b73]">CANDLES</Link>
           <a href="#" className="hover:text-[#b79b73]">DISCOVERY SETS</a>
           <a href="#" className="hover:text-[#b79b73]">OILS</a>
-          <a href="#" className="hover:text-[#b79b73]">BRANDS</a>
+          <a href="#" className="hover:text-[#b79b73]">BRANDS</a>   
           <a href="#" className="hover:text-[#b79b73]">SERVICES</a>
           <a href="#" className="hover:text-[#b79b73]">ABOUT US</a>  
         </nav> 
       </header>
-
-      {/* Search Modal */}
+    
       {showSearch && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-start justify-center pt-24">
           <div className="bg-white w-full max-w-2xl mx-100 rounded-lg shadow-lg p-6">
@@ -100,14 +85,6 @@ function Header() {
       
       <div className="h-[200px] md:h-[180px]"></div>
 
-      <div className="w-full relative overflow-hidden">
-        <div className="flex transition-transform duration-500 ease-in-out"
-          style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
-          {slides.map((slide, index) => (
-            <img  key={index}src={slide} alt={`slider-${index}`} className="w-full object-cover flex-shrink-0"/>
-          ))}
-        </div>
-      </div>   
     </>
   ) 
 }      
